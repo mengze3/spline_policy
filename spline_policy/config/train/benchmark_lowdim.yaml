@@ -1,0 +1,105 @@
+defaults:
+  - task: pusht_lowdim
+
+name: benchmark_lowdim
+action_dim: ${task.action_dim}
+task_name: ${task.name}
+
+# training configs
+debug: False
+rollout_every: 25
+seed: 42
+num_epochs: 500
+device: cuda:0
+nbSeg: 6
+
+# logging configs
+logger:
+  project_name_logger: "logging.project"
+  params_logger:
+    - "training.seed"
+    - "horizon"
+    - "policy.poly.nbSeg"
+    - "task.dataset_type"
+
+# metrics configs
+metrics:
+  metric_key: "test"
+  metrics: ["mean_score"]
+
+# experiment configs: diffusion/flowmatching x pure/spline
+configs:
+
+  # flowmatching spline setting
+  - config_name: train_flowmatching_unet_lowdim_spline_workspace.yaml
+    overrides:
+      task: ${task_name}
+
+      horizon: 16
+      n_action_steps: 8
+      policy.poly.nbSeg: ${nbSeg}
+      policy.poly.nbDim: ${action_dim}
+
+      training.seed: ${seed}
+      training.device: ${device}
+      training.num_epochs: ${num_epochs}
+      training.rollout_every: ${rollout_every}
+      training.debug: ${debug}
+
+      logging.project: flowmatching_spline
+
+  # pure flowmatching setting
+  - config_name: train_flowmatching_unet_lowdim_workspace.yaml
+    overrides:
+      task: ${task_name}
+
+      horizon: 16
+      n_action_steps: 8
+
+      training.seed: ${seed}
+      training.device: ${device}
+      training.num_epochs: ${num_epochs}
+      training.rollout_every: ${rollout_every}
+      training.debug: ${debug}
+
+      logging.project: flowmatching_pure
+
+  # diffusion spline setting
+  - config_name: train_diffusion_unet_lowdim_spline_workspace.yaml
+    overrides:
+      task: ${task_name}
+
+      horizon: 16
+      n_action_steps: 8
+      policy.poly.nbSeg: ${nbSeg}
+      policy.poly.nbDim: ${action_dim}
+
+      training.seed: ${seed}
+      training.device: ${device}
+      training.num_epochs: ${num_epochs}
+      training.rollout_every: ${rollout_every}
+      training.debug: ${debug}
+
+      logging.project: diffusion_spline
+
+  # pure diffusion setting
+  - config_name: train_diffusion_unet_lowdim_workspace.yaml
+    overrides:
+      task: ${task_name}
+
+      horizon: 16
+      n_action_steps: 8
+
+      training.seed: ${seed}
+      training.device: ${device}
+      training.num_epochs: ${num_epochs}
+      training.rollout_every: ${rollout_every}
+      training.debug: ${debug}
+
+      logging.project: diffusion_pure
+
+hydra:
+  job:
+    override_dirname: ${name}
+  run:
+    dir: data/outputs/${now:%Y.%m.%d}/${now:%H.%M.%S}_${name}_${task_name}

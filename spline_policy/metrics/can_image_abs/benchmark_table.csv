@@ -1,0 +1,5 @@
+Method,test/mean_score (max),test/mean_score (min),test/mean_score (last_10_avg),test/mean_score (top_5_avg)
+diffusion_pure_seed42_horizon16.json,1.0,0.0,0.9958333333333333,1.0
+diffusion_spline_seed42_horizon16_nbSeg6.json,1.0,0.16666666666666666,0.9875000000000002,1.0
+flowmatching_pure_seed42_horizon16.json,1.0,0.16666666666666666,0.9958333333333333,1.0
+flowmatching_spline_seed42_horizon16_nbSeg6.json,1.0,0.0,0.9958333333333333,1.0

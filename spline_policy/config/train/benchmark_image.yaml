@@ -1,0 +1,118 @@
+defaults:
+  - task: pusht_image
+
+name: benchmark_image
+shape_meta: ${task.shape_meta}
+task_name: ${task.name}
+
+# training configs
+debug: False
+rollout_every: 25
+seed: 42
+num_epochs: 500
+device: cuda:0
+nbSeg: 6
+batch_size: 32
+
+# logging configs
+logger:
+  project_name_logger: "logging.project"
+  params_logger:
+    - "training.seed"
+    - "horizon"
+    - "policy.poly.nbSeg"
+    - "task.dataset_type"
+
+# metrics configs
+metrics:
+  metric_key: "test"
+  metrics: ["mean_score"]
+
+# experiment configs: diffusion/flowmatching x pure/spline
+configs:
+
+  # flowmatching spline setting
+  - config_name: train_flowmatching_unet_image_spline_workspace.yaml
+    overrides:
+      task: ${task_name}
+
+      horizon: 16
+      n_action_steps: 8
+      policy.poly.nbSeg: ${nbSeg}
+      policy.poly.nbDim: ${shape_meta.action.shape[0]}
+
+      training.seed: ${seed}
+      training.device: ${device}
+      training.num_epochs: ${num_epochs}
+      training.rollout_every: ${rollout_every}
+      training.debug: ${debug}
+
+      dataloader.batch_size: ${batch_size}
+      val_dataloader.batch_size: ${batch_size}
+
+      logging.project: flowmatching_spline
+
+  # pure flowmatching setting
+  - config_name: train_flowmatching_unet_image_workspace.yaml
+    overrides:
+      task: ${task_name}
+
+      horizon: 16
+      n_action_steps: 8
+
+      training.seed: ${seed}
+      training.device: ${device}
+      training.num_epochs: ${num_epochs}
+      training.rollout_every: ${rollout_every}
+      training.debug: ${debug}
+
+      dataloader.batch_size: ${batch_size}
+      val_dataloader.batch_size: ${batch_size}
+
+      logging.project: flowmatching_pure
+
+  # diffusion spline setting
+  - config_name: train_diffusion_unet_image_spline_workspace.yaml
+    overrides:
+      task: ${task_name}
+
+      horizon: 16
+      n_action_steps: 8
+      policy.poly.nbSeg: ${nbSeg}
+      policy.poly.nbDim: ${shape_meta.action.shape[0]}
+
+      training.seed: ${seed}
+      training.device: ${device}
+      training.num_epochs: ${num_epochs}
+      training.rollout_every: ${rollout_every}
+      training.debug: ${debug}
+
+      dataloader.batch_size: ${batch_size}
+      val_dataloader.batch_size: ${batch_size}
+
+      logging.project: diffusion_spline
+
+  # pure diffusion setting
+  - config_name: train_diffusion_unet_image_workspace.yaml
+    overrides:
+      task: ${task_name}
+
+      horizon: 16
+      n_action_steps: 8
+
+      training.seed: ${seed}
+      training.device: ${device}
+      training.num_epochs: ${num_epochs}
+      training.rollout_every: ${rollout_every}
+      training.debug: ${debug}
+
+      dataloader.batch_size: ${batch_size}
+      val_dataloader.batch_size: ${batch_size}
+
+      logging.project: diffusion_pure
+
+hydra:
+  job:
+    override_dirname: ${name}
+  run:
+    dir: data/outputs/${now:%Y.%m.%d}/${now:%H.%M.%S}_${name}_${task_name}
