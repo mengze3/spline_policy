@@ -136,6 +136,7 @@ class DiffusionUnetImagePolicy(SplinePolicyMixin, BaseImagePolicy):
         self,
         obs_dict: Dict[str, torch.Tensor],
         is_continue: bool = False,
+        receding_horizon: float = None,
     ) -> Dict[str, torch.Tensor]:
         """
         obs_dict: must include "obs" key
@@ -210,7 +211,11 @@ class DiffusionUnetImagePolicy(SplinePolicyMixin, BaseImagePolicy):
             agent_obs = None
         action_pred, w_decode = self._decode_prediction(
             wparams,
-            receding_horizon=sample_num / self.horizon,
+            receding_horizon=(
+                sample_num / self.horizon
+                if receding_horizon is None
+                else receding_horizon
+            ),
             is_continue=is_continue,
             last_state=agent_obs,
             N=sample_num,

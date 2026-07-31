@@ -34,6 +34,8 @@ dependencies:
       - pytorchvideo==0.1.5
       - pybullet==2.6.9
       - imageio==2.22.0
+      - imageio-ffmpeg==0.4.9
+      - ipykernel==6.29.5
       - tensorboard==2.14.0
       - tensorboardx==2.6.2.2
       - gdown==5.2.0

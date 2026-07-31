@@ -40,6 +40,7 @@ The main entry point is [`spline_policy/notebooks/spline_policy_demo.ipynb`](spl
 - Uncertainty propagation
 - Null-space control integration
 - Compatibility with other backbones, and how to launch training
+- Push-T deployment with high-rate flow-field execution and disturbance recovery
 
 [`spline_policy/metrics/`](spline_policy/metrics) collects the benchmark tables and plots reported in the paper. The point-cloud tasks (`adroit_door`, `adroit_pen`, `dexart_laptop`) were produced with SP ported onto a [3D Diffusion Policy (DP3)](https://github.com/YanjieZe/3D-Diffusion-Policy) backbone; that integration isn't part of this release, but follows the same pattern.
 
