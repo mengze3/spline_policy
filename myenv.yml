@@ -15,7 +15,6 @@ dependencies:
   - zarr=2.12.0
   - numpy=1.23.3
   - pip:
-      - ipykernel
       - numba
       - torch==2.1.2
       - torchvision==0.16.2
