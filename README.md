@@ -9,7 +9,7 @@ Corresponding author: Yiming Li (<yiming.li@epfl.ch>)
 
 ![Spline Policy method overview](media/method_2.jpg)
 
-This repository has been refactored and trimmed down for open-sourcing with the help of [Claude Code](https://claude.com/claude-code). If anything looks broken or missing, please [get in touch](#contact).
+This repository provides a streamlined implementation accompanying the paper.
 
 ## Installation
 
@@ -56,9 +56,14 @@ The main entry point is [`spline_policy/notebooks/spline_policy_demo.ipynb`](spl
 ```
 
 ## License
-This repository is released under the MIT license. See [LICENSE](LICENSE) for additional details.
+
+Original contributions in this repository are released under the [MIT License](LICENSE).
+Third-party components remain subject to their respective licenses; see
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## Acknowledgement
+
+* Code refactoring and repository preparation were assisted by [Claude Code](https://claude.com/claude-code) and [OpenAI Codex](https://openai.com/codex/).
 * This codebase is built on top of [Diffusion Policy](https://github.com/real-stanford/diffusion_policy).
 * Our [`ConditionalUnet1D`](./spline_policy/policy/diffusion_policy/model/diffusion/conditional_unet1d.py) implementation is adapted from [Planning with Diffusion](https://github.com/jannerm/diffuser).
 * Our [MP-DF-DS](./spline_policy/policy/diffusion_policy/planning/quadratic_spline.py) implementation is adapted from [MP-DF-DS](https://github.com/mp-df-ds/mp-df-ds).
