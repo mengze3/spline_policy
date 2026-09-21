@@ -1,4 +1,5 @@
 bin
+/overleaf/
 logs
 wandb
 outputs

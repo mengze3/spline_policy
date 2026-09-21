@@ -1,0 +1,402 @@
+{
+  "search": {
+    "samples": [
+      16,
+      20,
+      24,
+      32
+    ],
+    "attraction": [
+      0.1,
+      0.2,
+      0.4,
+      0.6
+    ],
+    "dt": [
+      0.04,
+      0.08,
+      0.12
+    ],
+    "xlim": [
+      0.55,
+      1.0
+    ],
+    "ylim": [
+      0.8,
+      1.15
+    ],
+    "spacing": 0.05
+  },
+  "dynamics": {
+    "start": [
+      0.75,
+      1.05
+    ],
+    "samples": 20,
+    "attraction": 0.1,
+    "dt": 0.08,
+    "duration": 6.0,
+    "speed": 0.5,
+    "horizon": 16.0,
+    "goal_tolerance": 0.005,
+    "unnormalized": false,
+    "segments": 6
+  },
+  "summary": [
+    {
+      "samples": 16,
+      "attraction": 0.1,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 16,
+      "attraction": 0.1,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 16,
+      "attraction": 0.1,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 16,
+      "attraction": 0.2,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 16,
+      "attraction": 0.2,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 16,
+      "attraction": 0.2,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 16,
+      "attraction": 0.4,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 16,
+      "attraction": 0.4,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 16,
+      "attraction": 0.4,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 16,
+      "attraction": 0.6,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 16,
+      "attraction": 0.6,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 16,
+      "attraction": 0.6,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 20,
+      "attraction": 0.1,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 20,
+      "attraction": 0.1,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 1
+    },
+    {
+      "samples": 20,
+      "attraction": 0.1,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 20,
+      "attraction": 0.2,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 20,
+      "attraction": 0.2,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 20,
+      "attraction": 0.2,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 20,
+      "attraction": 0.4,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 20,
+      "attraction": 0.4,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 20,
+      "attraction": 0.4,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 20,
+      "attraction": 0.6,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 20,
+      "attraction": 0.6,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 20,
+      "attraction": 0.6,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.1,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.1,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.1,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.2,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.2,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.2,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.4,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.4,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.4,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.6,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.6,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 24,
+      "attraction": 0.6,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.1,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.1,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.1,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.2,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.2,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.2,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.4,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.4,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.4,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.6,
+      "dt": 0.04,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.6,
+      "dt": 0.08,
+      "starts": 62,
+      "recovered_oscillations": 0
+    },
+    {
+      "samples": 32,
+      "attraction": 0.6,
+      "dt": 0.12,
+      "starts": 62,
+      "recovered_oscillations": 0
+    }
+  ],
+  "candidates": [
+    {
+      "start": [
+        0.75,
+        1.05
+      ],
+      "samples": 20,
+      "attraction": 0.1,
+      "dt": 0.08,
+      "reversals": 59,
+      "window": [
+        32,
+        92
+      ],
+      "net_displacement": 0.004129713566360553,
+      "moving_window": false,
+      "goal_time": 8.24
+    }
+  ]
+}

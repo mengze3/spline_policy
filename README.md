@@ -11,6 +11,15 @@ Corresponding author: Yiming Li (<yiming.li@epfl.ch>)
 
 This repository provides a streamlined implementation accompanying the paper.
 
+Figure preparation follows [the paper's figure style guide](FIGURE_STYLE.md).
+
+## Revision experiments
+
+- [Closest-point estimation](spline_policy/run/rebuttal/README.md): [saved results](spline_policy/outputs/m1_projection).
+- [Matched-coefficient reconstruction](spline_policy/run/rebuttal/TABLE1.md): [saved results](spline_policy/outputs/m1_table1), including per-demonstration errors and reconstructions.
+
+Experiment code and results are included here; Overleaf sources are maintained separately.
+
 ## Installation
 
 Install [micromamba](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) if you don't have it:

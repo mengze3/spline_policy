@@ -1,0 +1,94 @@
+{
+  "upstream_basis_max_abs_error": {
+    "piecewise_3": 0.0,
+    "piecewise_7": 0.0,
+    "piecewise_12": 0.0,
+    "piecewise_17": 0.0,
+    "piecewise_22": 0.0,
+    "bernstein_3": 0.0,
+    "bernstein_7": 1.1102230246251565e-16,
+    "bernstein_12": 1.1102230246251565e-16,
+    "bernstein_17": 5.551115123125783e-17,
+    "bernstein_22": 5.551115123125783e-17,
+    "rbf_3": 0.0,
+    "rbf_7": 0.0,
+    "rbf_12": 0.0,
+    "rbf_17": 0.0,
+    "rbf_22": 0.0,
+    "fourier_3": 0.0,
+    "fourier_7": 7.105427357601002e-15,
+    "fourier_12": 1.4210854715202004e-14,
+    "fourier_17": 1.4210854715202004e-14,
+    "fourier_22": 2.8282931552325863e-14
+  },
+  "upstream_reconstruction_max_abs_error": {
+    "piecewise_3": 4.973799150320701e-14,
+    "piecewise_7": 4.618527782440651e-14,
+    "piecewise_12": 7.815970093361102e-14,
+    "piecewise_17": 5.684341886080802e-14,
+    "piecewise_22": 4.263256414560601e-14,
+    "bernstein_3": 1.4210854715202004e-13,
+    "bernstein_7": 2.8279600883251987e-12,
+    "bernstein_12": 1.5132428643482854e-10,
+    "bernstein_17": 1.6281994419387047e-08,
+    "bernstein_22": 1.0110088766168701e-07,
+    "rbf_3": 1.1368683772161603e-13,
+    "rbf_7": 1.3500311979441904e-13,
+    "rbf_12": 5.755396159656812e-13,
+    "rbf_17": 8.036238341446733e-12,
+    "rbf_22": 7.979820360048961e-09,
+    "fourier_3": 4.973799150320701e-14,
+    "fourier_7": 1.1368683772161603e-13,
+    "fourier_12": 1.092459456231154e-13,
+    "fourier_17": 2.5579538487363607e-13,
+    "fourier_22": 2.5579538487363607e-13
+  },
+  "terminal_rest": {
+    "3": {
+      "free_coefficients_per_dimension": 3,
+      "segments": 2,
+      "max_c0_residual": 0.0,
+      "max_c1_residual": 3.552713678800501e-15,
+      "max_terminal_velocity": 0.0
+    },
+    "7": {
+      "free_coefficients_per_dimension": 7,
+      "segments": 6,
+      "max_c0_residual": 0.0,
+      "max_c1_residual": 7.105427357601002e-15,
+      "max_terminal_velocity": 0.0
+    },
+    "12": {
+      "free_coefficients_per_dimension": 12,
+      "segments": 11,
+      "max_c0_residual": 0.0,
+      "max_c1_residual": 7.105427357601002e-15,
+      "max_terminal_velocity": 0.0
+    },
+    "17": {
+      "free_coefficients_per_dimension": 17,
+      "segments": 16,
+      "max_c0_residual": 0.0,
+      "max_c1_residual": 7.105427357601002e-15,
+      "max_terminal_velocity": 0.0
+    },
+    "22": {
+      "free_coefficients_per_dimension": 22,
+      "segments": 21,
+      "max_c0_residual": 0.0,
+      "max_c1_residual": 7.105427357601002e-15,
+      "max_terminal_velocity": 0.0
+    }
+  },
+  "tests": "13 passed: independent B-spline space, C1, terminal rest, rank, DCT, mirrored Fourier, error metric",
+  "published_table1": {
+    "url": "https://arxiv.org/pdf/2504.09705#page=4",
+    "matching_cells_at_two_decimals": 25,
+    "compared_statistics": [
+      "mean",
+      "std"
+    ]
+  },
+  "evaluations": 7350,
+  "latex": "IEEEtran compiled successfully; no overfull boxes"
+}

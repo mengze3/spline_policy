@@ -1,0 +1,69 @@
+{
+  "dataset": "/home/menzzz/2024/codes/others/LASAHandwritingDataset/DataSet",
+  "shapes": 30,
+  "demonstrations": 210,
+  "samples_per_demo": 1000,
+  "dimensions": 2,
+  "parameters_per_dim": [
+    3,
+    7,
+    12,
+    17,
+    22
+  ],
+  "preprocessing": "None: original positions and sample order",
+  "fit": "float64 least squares with RCFS ridge=1e-8; FAST uses scipy.fft.dct/idct(norm='ortho'), no ridge",
+  "primary_metric": "mean_t ||reconstruction[t] - reference[t]||_2",
+  "std": "population standard deviation across all demonstrations (ddof=0)",
+  "rcfs": "https://github.com/idiap/rcfs/blob/f4c96d66cab69f8612a3d380861a909bc6904ad0/python/MP.py",
+  "fast": "https://huggingface.co/physical-intelligence/fast/blob/ec4d7aa71691cac0b8bed6942be45684db2110f4/processing_action_tokenizer.py",
+  "dataset_sha256": {
+    "Angle.mat": "15c278073fd913e42aa4097e2d52eeba15d2e762b26805afcbe881da45561d9a",
+    "BendedLine.mat": "3509fc2ce67a389364118f542a967d6d0390b49e77a9e20fc2aa611660e7b8a7",
+    "CShape.mat": "c7c58ea6a1f085d0656449abedf84b1f6629b265b6ff2834147c2515557822f6",
+    "DoubleBendedLine.mat": "0cc6e9261f7fcbd582be2bacf9b3c54ff13d0f75d010d336f28fd6a8858ff260",
+    "GShape.mat": "4d6f5db564ae8d5351bf34dbb4f4e4523b3ba9b7045da41727e9bed5c18412d1",
+    "JShape.mat": "2fbb9694c763fd3e4fb417e4330f94f30188501c5b8676e4829136ee4f5b1d3b",
+    "JShape_2.mat": "408e1d42b69f4fd5560341771c87a0dd676aa743043ed3d0d40b94fe50a6900e",
+    "Khamesh.mat": "b2c077bc277c2ba55bb9c764140ee0cdb0e62b23a5a0ab6b671d6564c916fd8d",
+    "LShape.mat": "3aa960ed9241d4651c7e21240d63d616d215d889e08ce780fc7a5b1334474ce9",
+    "Leaf_1.mat": "4aaa8bc456607061f79c46363760d9a0bfd6a0d855d305c8f09728d805a7025d",
+    "Leaf_2.mat": "d02e18252f10492728fdbe740c21983d12e2d55078ae831ae9f17c7fc4b57888",
+    "Line.mat": "11f3c840454caac84e77832771906e33199bc8ee98b4118ede948d3d05a3e58c",
+    "Multi_Models_1.mat": "dce6b607987fa35c32fd1d6c3ee69f055fbbc20111c5aa657d5768e39b92ac42",
+    "Multi_Models_2.mat": "e9d119138ab631ceebf5b12703491b6a7cd764b57974e3f888e4aed420ae739a",
+    "Multi_Models_3.mat": "377d9743cec818d7ee9100634c4e83ad0857004a4fe72fe2211cb57812652d0f",
+    "Multi_Models_4.mat": "9c8fb39945c9e7613f3fc5f6cbc0ba1f66c8c4e22187cdea1d0e5d3efcaeb878",
+    "NShape.mat": "d84ac5c67c4e3e1910aeadd12e8f74a318aa3d0ce3de870fa04a735d624abe86",
+    "PShape.mat": "19e9ef909f543e169d67657a2b00c165da070abcf7bf8ce546f5125a5e3f73cc",
+    "RShape.mat": "dba00daa211c652089b099159828f29c444d7321aff24b2329c8d10399d10970",
+    "Saeghe.mat": "1f0237c6b957d299ae896ce2a0647b837d4666f31a3cffa70d7bf1929776b756",
+    "Sharpc.mat": "601eaecd1f593a33b8a72f8db933550e0e25b780336bb3438b5e9ce912186a26",
+    "Sine.mat": "66d0b7d7d0c40c36414315904d0d8e2d728ea86dbe767a7b92151cf6c1002e1f",
+    "Snake.mat": "d5b3bf22845a9156d8deaeb4ca906968afdfc11495c55dad01970fd72822d9ed",
+    "Spoon.mat": "69e48934686c01d890ad7e6c34e41bfa6acb58940fca28201913f06a99d45ea9",
+    "Sshape.mat": "0787d897e6c99162bacc9ab4f147c4e612afa5e7d4bfb3e2a883e3b28b099881",
+    "Trapezoid.mat": "2d99174cee769f4087fdfb1ae27d6340a8bb15ad31d315c8cee9a61e046c3f3b",
+    "WShape.mat": "5f73b81450b7968d9ea27439c431bceac04c10cf47bafad367c665820ca6da94",
+    "Worm.mat": "da171cb8e4cd8b52fe794cab2827c6f87d595a5cd1954f009afd30750f4948c2",
+    "Zshape.mat": "03d37147ac3bda2d3631a3e415e78b34bc188c9d5032cfd18f19aeabc408a044",
+    "heee.mat": "3f6b3f5543d6ec2a6c225fe164c3d69691154c7e0204109b7548cbdb871ef9fa"
+  },
+  "code_sha256": {
+    "table1_basis.py": "56655dd103467c25bce3346031e0839dd5122f94b69e77c7fffb17582c3e1a5f",
+    "basis_reconstruction.py": "5f8a65dffd8e91e9115eac36ce279f248912dde8163b99398d6c8ca7aefae055",
+    "quadratic_spline.py": "13042bea63877ac338d24ec2a098075684e75dc00d23e9d1e8f4584f322445a6"
+  },
+  "versions": {
+    "numpy": "1.23.5",
+    "scipy": "1.10.0",
+    "torch": "1.13.1+cu117"
+  },
+  "table_rows": {
+    "piecewise": "Piecewise",
+    "bernstein": "B.P.",
+    "rbf": "RBF",
+    "fast": "Fourier / DCT (FAST-cont.)",
+    "spline_rest": "Q.S. (ours)"
+  }
+}

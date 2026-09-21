@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Reconstruction error on 210 LASA demonstrations (1000 original samples each). Entries are the mean and population standard deviation of per-trajectory mean pointwise Euclidean errors in original LASA coordinate units; lower is better. K is the number of independent real coefficients per coordinate (2K scalars in 2D). Q.S. uses K-1 C1-continuous quadratic segments with zero terminal velocity, retaining K free coefficients per coordinate after eliminating one coefficient. Fourier/DCT is grouped as one cosine-basis family; the row reports FAST's continuous orthonormal DCT with K retained low frequencies, without quantization or BPE. The RCFS mirrored-Fourier fit is retained in the raw results. Closest-point query describes the construction, not a measured runtime: B.P. has a stationarity polynomial of degree 2K-3; Q.S. requires at most cubic roots per segment, with endpoints also checked. Smooth alternative bases also admit numerical flow-field construction.}
+\label{tab:m1_basis}
+\small
+\begin{tabular}{lcccccc}
+\hline
+Method & $K=3$ & $K=7$ & $K=12$ & $K=17$ & $K=22$ & Closest-point query \\
+\hline
+Piecewise & $7.97 \pm 2.76$ & $3.40 \pm 1.10$ & $1.97 \pm 0.63$ & $1.39 \pm 0.44$ & $1.08 \pm 0.35$ & Discrete lookup \\
+B.P. & $6.18 \pm 3.65$ & $0.96 \pm 0.60$ & $0.28 \pm 0.13$ & $0.14 \pm 0.06$ & $0.10 \pm 0.04$ & Polynomial \\
+RBF & $16.51 \pm 4.35$ & $1.79 \pm 0.61$ & $0.26 \pm 0.08$ & $0.12 \pm 0.04$ & $0.05 \pm 0.02$ & Numerical \\
+Fourier / DCT (FAST-cont.) & $5.18 \pm 3.52$ & $0.56 \pm 0.33$ & $0.19 \pm 0.08$ & $0.09 \pm 0.04$ & $0.05 \pm 0.02$ & Numerical \\
+Q.S. (ours) & $6.55 \pm 3.12$ & $0.74 \pm 0.42$ & $0.21 \pm 0.09$ & $0.11 \pm 0.05$ & $0.06 \pm 0.02$ & Cubic / segment \\
+\hline
+\end{tabular}
+\end{table*}

@@ -1,0 +1,210 @@
+{
+  "config": {
+    "start": [
+      0.75,
+      1.05
+    ],
+    "samples": 20,
+    "attraction": 0.1,
+    "dt": 0.08,
+    "duration": 6.0,
+    "speed": 0.5,
+    "horizon": 16.0,
+    "goal_tolerance": 0.005,
+    "unnormalized": false,
+    "segments": 6
+  },
+  "metrics": [
+    {
+      "samples": 20,
+      "dt": 0.08,
+      "goal_time": 8.24,
+      "goal_error": 0.003706193748029367,
+      "curve_arrival": 8.24,
+      "pre_curve_reversal_steps": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        93,
+        94
+      ],
+      "longest_reversal_window": {
+        "steps": [
+          32,
+          92
+        ],
+        "reversals": 59,
+        "duration": 4.800000000000001,
+        "net_displacement": 0.004129713566360553,
+        "prefix_clearance_bound": 0.13874565400560077
+      },
+      "path_length": 4.120000000000001
+    },
+    {
+      "samples": 40,
+      "dt": 0.08,
+      "goal_time": 3.52,
+      "goal_error": 0.000502158380785731,
+      "curve_arrival": 3.52,
+      "pre_curve_reversal_steps": [
+        35,
+        41
+      ],
+      "longest_reversal_window": {
+        "steps": [
+          34,
+          36
+        ],
+        "reversals": 1,
+        "duration": 0.1599999999999997,
+        "net_displacement": 0.025730452960171787,
+        "prefix_clearance_bound": 0.12862294784439585
+      },
+      "path_length": 1.76
+    },
+    {
+      "samples": 0,
+      "dt": 0.08,
+      "goal_time": 3.44,
+      "goal_error": 0.0018037089932185831,
+      "curve_arrival": 3.44,
+      "pre_curve_reversal_steps": [
+        35
+      ],
+      "longest_reversal_window": {
+        "steps": [
+          34,
+          36
+        ],
+        "reversals": 1,
+        "duration": 0.1599999999999997,
+        "net_displacement": 0.02478399237755308,
+        "prefix_clearance_bound": 0.13264931585662595
+      },
+      "path_length": 1.72
+    },
+    {
+      "samples": 20,
+      "dt": 0.04,
+      "goal_time": 3.64,
+      "goal_error": 0.0008173066483807527,
+      "curve_arrival": 3.64,
+      "pre_curve_reversal_steps": [
+        72
+      ],
+      "longest_reversal_window": {
+        "steps": [
+          71,
+          73
+        ],
+        "reversals": 1,
+        "duration": 0.08000000000000007,
+        "net_displacement": 0.013895691918096068,
+        "prefix_clearance_bound": 0.12505538601434335
+      },
+      "path_length": 1.8200000000000005
+    },
+    {
+      "samples": 40,
+      "dt": 0.04,
+      "goal_time": 3.64,
+      "goal_error": 0.004442547968724203,
+      "curve_arrival": 3.64,
+      "pre_curve_reversal_steps": [
+        71
+      ],
+      "longest_reversal_window": {
+        "steps": [
+          70,
+          72
+        ],
+        "reversals": 1,
+        "duration": 0.07999999999999963,
+        "net_displacement": 0.013126176411544578,
+        "prefix_clearance_bound": 0.13263360722534484
+      },
+      "path_length": 1.8200000000000007
+    },
+    {
+      "samples": 0,
+      "dt": 0.04,
+      "goal_time": 3.64,
+      "goal_error": 0.0028571722688296637,
+      "curve_arrival": 3.64,
+      "pre_curve_reversal_steps": [
+        71
+      ],
+      "longest_reversal_window": {
+        "steps": [
+          70,
+          72
+        ],
+        "reversals": 1,
+        "duration": 0.07999999999999963,
+        "net_displacement": 0.01292014062698469,
+        "prefix_clearance_bound": 0.1300649516744338
+      },
+      "path_length": 1.8199999999999998
+    }
+  ],
+  "verification": {
+    "max_squared_distance_error_vs_numerical_roots": 6.938893903907228e-17,
+    "queries": 402
+  }
+}
