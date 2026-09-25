@@ -1,0 +1,297 @@
+{
+  "runs": [
+    {
+      "source": "metrics/pusht_image/diffusion_pure_seed42_horizon16.json.txt",
+      "sha256": "740b242d2cdca677473a5e56d126cbfb60a9b7abb74255eb9ae1583a9d5fe4d7",
+      "rows": 186000,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        372
+      ]
+    },
+    {
+      "source": "metrics/pusht_image/diffusion_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "4c048412cf61139e032ffa93999e3410e750fc1f2db25c5a79e0e2f39107f761",
+      "rows": 186000,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        372
+      ]
+    },
+    {
+      "source": "metrics/pusht_image/flowmatching_pure_seed42_horizon16.json.txt",
+      "sha256": "c3a98e90ab60d7e88c76905bd5428249cca02b5eeb5cad0d53f2cf067b96f49a",
+      "rows": 46500,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        93
+      ]
+    },
+    {
+      "source": "metrics/pusht_image/flowmatching_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "81aeacda809b44d620c21c2dd197e691933ebae6c935c97d5d959599f9c6c81d",
+      "rows": 46500,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        93
+      ]
+    },
+    {
+      "source": "metrics/can_image_abs/diffusion_pure_seed42_horizon16.json.txt",
+      "sha256": "91776d1b4f8d50a5430ee1447a7157fefa9170d9ffc80fe0778c2cac7b5f2769",
+      "rows": 334500,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        669
+      ]
+    },
+    {
+      "source": "metrics/can_image_abs/diffusion_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "47936e125839250ce1330aa6257cde4b906d866d23d28f41efc8d6431374c637",
+      "rows": 334500,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        669
+      ]
+    },
+    {
+      "source": "metrics/can_image_abs/flowmatching_pure_seed42_horizon16.json.txt",
+      "sha256": "2d3c31410ff5f48f5c77d406864e21123ceee284a09e5c6fdee68053d1b36192",
+      "rows": 334500,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        669
+      ]
+    },
+    {
+      "source": "metrics/can_image_abs/flowmatching_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "b8c086e35eb84dcbc3183f88942b799c33c7194b4231c5f12b85ab1853fd7295",
+      "rows": 334500,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        669
+      ]
+    },
+    {
+      "source": "metrics/transport_lowdim_abs/diffusion_pure_seed42_horizon16.json.txt",
+      "sha256": "64bbc8e4997968a9a4612f1dd08d91d1a3d459421f05accb70f702c2efca6d70",
+      "rows": 177000,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        354
+      ]
+    },
+    {
+      "source": "metrics/transport_lowdim_abs/diffusion_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "148c3d5283a511bb3e7baca48bf0f0ff563edb431549d797ab167795260b7a19",
+      "rows": 177000,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        354
+      ]
+    },
+    {
+      "source": "metrics/transport_lowdim_abs/flowmatching_pure_seed42_horizon16.json.txt",
+      "sha256": "5e800d61447f003a5be4e2bdd9e66e5cff4eeb4d7c50274b69140dc84989856c",
+      "rows": 177000,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        354
+      ]
+    },
+    {
+      "source": "metrics/transport_lowdim_abs/flowmatching_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "1b73abed1b4a7703a005ec31b922dc3485e7b146844c290fe0e5bd8c60a9f2f2",
+      "rows": 177000,
+      "epochs": 500,
+      "nonfinite_loss": 0,
+      "validation_epochs": 500,
+      "epoch_average_checked_against_bc_loss": false,
+      "records_per_epoch": [
+        354
+      ]
+    },
+    {
+      "source": "metrics/adroit_door/diffusion_pure_seed42_horizon16.json.txt",
+      "sha256": "04bc3d475010c80c3c9440be749f93dfeb8f45311f7804b443981e235060206b",
+      "rows": 42000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        14
+      ]
+    },
+    {
+      "source": "metrics/adroit_door/diffusion_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "4cdab7de9a141c71bbf541a6891ff88e3b05d83b8e1d70b2aa0b24c67d2491b9",
+      "rows": 42000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        14
+      ]
+    },
+    {
+      "source": "metrics/adroit_door/flowmatching_pure_seed42_horizon16.json.txt",
+      "sha256": "e11bc9b8cd22ed3d450017305f22632f3c61725c31226dca34b90062556cf12a",
+      "rows": 42000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        14
+      ]
+    },
+    {
+      "source": "metrics/adroit_door/flowmatching_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "05da77c9f95abeda639b66824e634011b69d14d18f89ecdc80f0097c2bbc1d85",
+      "rows": 42000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        14
+      ]
+    },
+    {
+      "source": "metrics/adroit_pen/diffusion_pure_seed42_horizon16.json.txt",
+      "sha256": "e313de0ff109a754940dee923694b4f903e77a30c5f67ed29493bc9e92b4f877",
+      "rows": 42000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        14
+      ]
+    },
+    {
+      "source": "metrics/adroit_pen/diffusion_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "292001914b6f9b1a9f6204e229d38d40f2dfab5ba0be2028f0e01e5291dfc503",
+      "rows": 42000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        14
+      ]
+    },
+    {
+      "source": "metrics/adroit_pen/flowmatching_pure_seed42_horizon16.json.txt",
+      "sha256": "caee026a0a078a4d78b4cfe0139a1bc9e46872043528f09a8c5e91ac64542192",
+      "rows": 42000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        14
+      ]
+    },
+    {
+      "source": "metrics/adroit_pen/flowmatching_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "5c45bacd2bf1173a58d2b867f5bff4493b3fd0f91b63b7629cd9254a8a5968ce",
+      "rows": 42000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        14
+      ]
+    },
+    {
+      "source": "metrics/dexart_laptop/diffusion_pure_seed42_horizon16.json.txt",
+      "sha256": "fa98ead1a4432ed8b10651aba9fff9dc187f2cae4ca458dacce2525ff9601d7f",
+      "rows": 54000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        18
+      ]
+    },
+    {
+      "source": "metrics/dexart_laptop/diffusion_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "d1a34b0bf338d17fa81d92140b67775ed199511dffb810f5f05fc38532f61f2d",
+      "rows": 54000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        18
+      ]
+    },
+    {
+      "source": "metrics/dexart_laptop/flowmatching_pure_seed42_horizon16.json.txt",
+      "sha256": "61c084e3fa4a1dfd7853250d13256dfdfc04cc6fe4295a04abf393b66471f4b0",
+      "rows": 54000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        18
+      ]
+    },
+    {
+      "source": "metrics/dexart_laptop/flowmatching_spline_seed42_horizon16_nbSeg6.json.txt",
+      "sha256": "9514b095dfc3b6bc89257683232c3f0d481920fae4c92909c492fbee91bddd90",
+      "rows": 54000,
+      "epochs": 3000,
+      "nonfinite_loss": 0,
+      "validation_epochs": 0,
+      "epoch_average_checked_against_bc_loss": true,
+      "records_per_epoch": [
+        18
+      ]
+    }
+  ],
+  "seed": 42,
+  "epoch_selection": "Last logged row per epoch; no additional averaging or smoothing.",
+  "limitations": "Single seed; logs use historical method names. Loss magnitudes across objectives are not a common performance metric. Three tasks have no validation loss. Cloud W&B history not verified.",
+  "workspace_source": "policy/diffusion_policy/workspace/train_diffusion_unet_image_workspace.py",
+  "plot_source_sha256": "026c7ee0c7b42666915b52d3c4d8b59e155271ae15875f145b386e95f782ddff"
+}
